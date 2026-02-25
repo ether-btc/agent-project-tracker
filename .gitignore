@@ -1,0 +1,37 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Secrets and credentials
+.env
+.env.*
+secrets/
+credentials/
+*.pem
+*.key
+
+# Sensitive data
+*-token*
+*-password*
+*-secret*
+*-api-key*
+
+# Local databases (examples should not include real data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
