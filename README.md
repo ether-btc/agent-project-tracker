@@ -25,9 +25,18 @@ Session-resilient project tracking templates for AI agents. Survive context rese
 | `templates/PROJECT-template.md` | Master project tracking file |
 | `templates/PROMPT-template.md` | Execution prompt with recovery protocol |
 
-## Example Project
+## Scripts
 
-See `examples/memory-enhancement/` for a full example of a 3-phase memory system improvement project.
+| Script | Purpose |
+|--------|---------|
+| `scripts/session-checkpoint.sh` | Checkpoint, handoff, and recovery |
+
+## Example Projects
+
+| Example | Description |
+|---------|-------------|
+| `examples/memory-enhancement/` | Multi-phase memory improvement |
+| `examples/model-manager/` | CLI tool development |
 
 ## How It Works
 
@@ -51,19 +60,17 @@ Works with any session checkpoint system:
 
 ```bash
 # Checkpoint during work
-./scripts/session-checkpoint.sh checkpoint
+./scripts/session-checkpoint.sh checkpoint "working on X" "current focus"
 
 # Recover on resume
 ./scripts/session-checkpoint.sh recover
 
 # End session cleanly
-./scripts/session-checkpoint.sh handoff
+./scripts/session-checkpoint.sh handoff "completed X" "next is Y"
 ```
 
 ## License
 
 MIT
-
----
 
 *Built for OpenClaw agents, works with any AI system that needs durable project tracking.*
