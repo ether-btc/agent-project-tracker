@@ -10,6 +10,7 @@ Session-resilient project tracking templates for AI agents. Survive context rese
 - ✅ **Blocker Handling** - Document and skip blocked tasks
 - ✅ **Checkpoint Protocol** - Save state every 2-3 tasks
 - ✅ **Handoff Protocol** - Clean session end with next action ready
+- ✅ **Delegation Best Practices** - Model selection, failsafe, quota management
 
 ## Quick Start
 
@@ -17,6 +18,26 @@ Session-resilient project tracking templates for AI agents. Survive context rese
 2. Fill in your project phases and tasks
 3. Copy `templates/PROMPT-template.md` as your execution prompt
 4. Execute the prompt to begin
+
+## Documentation
+
+### Core Guides
+| Document | Description |
+|----------|-------------|
+| [delegation-procedure.md](docs/delegation-procedure.md) | Standard delegation procedure |
+| [delegation-failsafe.md](docs/delegation-failsafe.md) | Error handling and rollback |
+| [delegation-quota.md](docs/delegation-quota.md) | Token budgeting |
+| [delegation-best-practices.md](docs/delegation-best-practices.md) | Research and best practices |
+
+### For AI Agents
+This repo includes delegation procedures designed for AI assistants:
+
+1. **Pre-delegation checklist** - Always verify task readiness
+2. **Atomic task design** - Tasks should be completable in one run
+3. **Failsafe mechanisms** - Handle errors gracefully
+4. **Quota management** - Stay within budget
+
+See `docs/` directory for full documentation.
 
 ## Template Files
 
