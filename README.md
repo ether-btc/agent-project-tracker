@@ -11,6 +11,9 @@ Session-resilient project tracking templates for AI agents. Survive context rese
 - ✅ **Checkpoint Protocol** - Save state every 2-3 tasks
 - ✅ **Handoff Protocol** - Clean session end with next action ready
 - ✅ **Delegation Best Practices** - Model selection, failsafe, quota management
+- ✅ **Progress Auto-Calculation** - Automatically calculate project progress
+- ✅ **Cross-Project Dependencies** - Check and manage dependencies between projects
+- ✅ **Dynamic Handoff Protocol** - Enhanced delegation with context transfer
 
 ## Quick Start
 
